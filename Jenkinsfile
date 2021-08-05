@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('git repo & clean') {
             steps {
-//                 bat "rmdir /s /q Building-REST-API-Website-CodingWithSonu-"
+                bat "rmdir /s /q Building-REST-API-Website-CodingWithSonu-"
 	  	bat "git clone https://github.com/Mrsonurai/Building-REST-API-Website-CodingWithSonu-.git"
 		bat "mvm clean -f Building-REST-API-Website-CodingWithSonu-"
             }
